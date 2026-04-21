@@ -1,0 +1,21 @@
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 10px;
+    &:hover {
+      background: #484f58;
+    }
+  }
+}
+
+@mixin glass-effect {
+  background: rgba(22, 27, 34, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(48, 54, 61, 0.5);
+}
